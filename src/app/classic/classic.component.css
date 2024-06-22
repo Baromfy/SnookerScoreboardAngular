@@ -1,0 +1,84 @@
+.container {
+  display: flex; /* Aktiválja a flexboxot */
+  justify-content: center; /* Vízszintesen középre helyezi a tartalmat */
+  align-items: center; /* Függőlegesen középre helyezi a tartalmat */
+  height: 100vh; /* A konténer magassága lefedi az egész nézetablakot */
+}
+
+
+.player-scoreboards {
+  display: flex; /* Aktiválja a flexboxot */
+  flex-direction: row; /* Rendezze sorba a téglalapokat */
+  justify-content: space-between; /* Helyezze el a téglalapokat a szélek között */
+  align-items: center; /* Igazítsa függőlegesen középre */
+}
+
+.button-row {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  margin-top: 20px; /* Adjust as needed */
+}
+
+.button-row button {
+  margin: 1em; /* Adjust spacing between buttons */
+}
+
+#redBtn{
+  background-color: red;
+}
+
+#yellowBtn{
+  background-color: #E4D715;
+}
+
+#greenBtn{
+  background-color: green;
+}
+
+#brownBtn{
+  background-color: brown;
+}
+
+#blueBtn{
+  background-color: blue;
+}
+
+#pinkBtn{
+  background-color: pink;
+}
+
+#blackBtn{
+  background-color: #343434;
+}
+
+#scoreboard-card {
+  background-color: #393E46;
+  width: 90%; /* 90% szélesség */
+  padding: 20px; /* Távolság a tartalom és a széle között */
+}
+
+.fullscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #393E46;
+  z-index: 1000;
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fullscreen #scoreboard-card {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 40px;
+}
+
+svg {
+  cursor: pointer;
+}

@@ -1,0 +1,56 @@
+table {
+  border-radius:25px;
+  border: 7px solid white;
+  border-collapse:separate;
+  text-align: center;
+  border-spacing: 0;
+  width: 30em;
+  height: 45em;
+  background-color: #01262E;
+  color: white;
+}
+
+#name{
+  font-size: 40px;
+  border-bottom: 1px solid white;
+  border-left: none;
+  border-right: none;
+}
+
+#frame{
+  font-size: 40px;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  border-left: none;
+  border-right: none;
+}
+
+#break{
+  font-size: 40px;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  border-left: none;
+  border-right: none;
+}
+
+#point{
+  font-size: 40px;
+  border-top: 1px solid white;
+  border-left: none;
+  border-right: none;
+}
+
+.red-border {
+  border: 7px solid #00ADB5;
+}
+
+td.animatePoint > span {
+  display: inline-block;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,27 @@
+.countdown-timer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+  }
+  
+  .countdown-timer h2 {
+    margin: 10px 0;
+  }
+  
+  .countdown-timer button {
+    margin: 5px;
+  }
+
+#buttons{
+    display: flex; /* Aktiválja a flexboxot */
+    justify-content: center; /* Vízszintesen középre helyezi a tartalmat */
+    align-items: center;
+}
+
+.progress-bar {
+    height: 5px;
+    background-color: red;
+    transition: width 1s linear;
+  }
+ 

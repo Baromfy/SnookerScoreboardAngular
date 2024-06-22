@@ -1,0 +1,10 @@
+<div class="countdown-timer">
+    <div class="progress-bar" [style.width.%]="percentageLeft"></div>
+    <h2>{{ timeLeft }} seconds</h2>
+    <div id="buttons">
+        <button mat-flat-button color="primary" (click)="startTimer()">Start</button>
+        <button mat-flat-button color="accent" (click)="stopTimer()">Stop</button>
+        <button mat-flat-button color="warn" (click)="resetTimer()">Reset</button>
+    </div>
+  </div>
+  

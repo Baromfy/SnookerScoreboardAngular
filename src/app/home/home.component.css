@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.player-inputs {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin-bottom: 20px;
+
+  label {
+    margin: 10px 0 5px;
+  }
+
+  input, select {
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+}
+
+.modes {
+  display: flex;
+  justify-content: center;
+}
+
+.error {
+  color: red;
+  font-size: 0.8em;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}

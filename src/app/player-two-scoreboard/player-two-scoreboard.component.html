@@ -1,0 +1,16 @@
+<table *ngFor="let user of users$ | async" [ngClass]="{ 'red-border': user.player2Active }">
+  <tbody>
+    <tr>
+      <td id="name">{{ user.player2Name }}</td>
+    </tr>
+    <tr>
+      <td id="frame">{{ user.player2Frame }}</td>
+    </tr>
+    <tr>
+      <td id="break">{{ user.player2Break }}</td>
+    </tr>
+    <tr>
+      <td id="point">{{ user.player2Point }}</td>
+    </tr>
+  </tbody>
+</table>

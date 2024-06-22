@@ -1,0 +1,30 @@
+table {
+  border-radius:25px;
+  border: 7px solid white;
+  border-collapse:separate;
+  text-align: center;
+  border-spacing: 0;
+  width: 30em;
+  height: 45em;
+  background-color: #01262E;
+}
+
+td {
+  border: 1px solid white;
+}
+
+#time{
+  font-size: 40px;
+}
+
+#frame{
+  font-size: 40px;
+}
+
+#break{
+  font-size: 40px;
+}
+
+#point{
+  font-size: 40px;
+}

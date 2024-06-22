@@ -1,0 +1,26 @@
+<div class="container" [ngClass]="{'fullscreen': isFullScreen}">
+  <mat-card id="scoreboard-card" class="animate__animated animate__fadeInUp">
+    <div class="player-scoreboards">
+      <player-scoreboard ngSkipHydration></player-scoreboard>
+      <match-statistics></match-statistics>
+      <app-player-two-scoreboard></app-player-two-scoreboard>
+    </div>
+    <div class="button-row" *ngFor="let user of users$ | async">
+      <button id="redBtn" mat-flat-button (click)="red()">{{user.numOfRed}}</button>
+      <button id="yellowBtn" mat-flat-button (click)="yellow()">{{user.numOfYellow}}</button>
+      <button id="greenBtn" mat-flat-button (click)="green()">{{user.numOfGreen}}</button>
+      <button id="brownBtn" mat-flat-button (click)="brown()">{{user.numOfBrown}}</button>
+      <button id="blueBtn" mat-flat-button (click)="blue()">{{user.numOfBlue}}</button>
+      <button id="pinkBtn" mat-flat-button (click)="pink()">{{user.numOfPink}}</button>
+      <button id="blackBtn" mat-flat-button (click)="black()">{{user.numOfBlack}}</button>
+      <button mat-flat-button (click)="changePlayer()">Change Player</button>
+      <button mat-flat-button color="warn" (click)="fault4()">Fault 4</button>
+      <button mat-flat-button color="warn" (click)="fault5()">Fault 5</button>
+      <button mat-flat-button color="warn" (click)="fault6()">Fault 6</button>
+      <button mat-flat-button color="warn" (click)="fault7()">Fault 7</button>
+      <button mat-flat-button (click)="giveUpFrame()">Give up frame</button>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24" (click)="toggleFullScreen()"><path fill="currentColor" d="M5 5h5v2H7v3H5zm9 0h5v5h-2V7h-3zm3 9h2v5h-5v-2h3zm-7 3v2H5v-5h2v3z"/></svg>
+  </mat-card>
+</div>
+

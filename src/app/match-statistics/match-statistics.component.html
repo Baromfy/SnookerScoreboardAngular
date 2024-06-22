@@ -1,0 +1,15 @@
+<table *ngFor="let user of users$ | async">
+  <tr>
+    <td id="time">Time</td>
+  </tr>
+  <tr>
+    <td id="frame">Frame ({{user.framesToWin}})</td>
+  </tr>
+  <tr>              
+    <td id="break">Break</td>
+  </tr>
+  <tr>
+    <td id="point">Point</td>
+  </tr>
+</table>
+

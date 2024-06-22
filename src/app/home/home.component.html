@@ -1,0 +1,26 @@
+<div class="container">
+  <p>IP cím: {{ ipAddress }}</p>
+  <form #gameForm="ngForm" (ngSubmit)="startGame(gameForm)">
+    <div class="player-inputs">
+      <label for="player1Name">Player1 name:</label>
+      <input type="text" id="player1Name" name="player1Name" [(ngModel)]="player1Name" required>
+
+      <label for="player2Name">Player2 name:</label>
+      <input type="text" id="player2Name" name="player2Name" [(ngModel)]="player2Name" required>
+
+      <label for="framesToWin">Number of frames:</label>
+      <input type="number" id="framesToWin" name="framesToWin" [(ngModel)]="framesToWin" min="1" required>
+
+      <label for="mode">Select Game Mode:</label>
+      <select id="mode" name="mode" [(ngModel)]="mode" required>
+        <option value="" disabled>Select mode</option>
+        <option value="classic">Classic</option>
+        <option value="shotout">Shotout</option>
+      </select>
+    </div>
+
+    <div class="modes">
+      <button type="submit" [disabled]="gameForm.invalid">Játék indítása</button>
+    </div>
+  </form>
+</div>
